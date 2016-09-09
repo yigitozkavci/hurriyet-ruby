@@ -2,7 +2,18 @@
 Unofficial Ruby Wrapper for Hurriyet API - http://developers.hurriyet.com.tr/
 
 # Getting Started
-`client = Hurriyet::Client.new(<YOUR_API_KEY>)`
+
+## Installation
+
+`$ gem install hurriyet`
+
+## Usage
+```ruby
+require 'hurriyet'
+
+client = Hurriyet::Client.new(<YOUR_API_KEY>)
+client.articles.all
+```
 
 # Resources
 - [Articles](#articles)
@@ -10,7 +21,29 @@ Unofficial Ruby Wrapper for Hurriyet API - http://developers.hurriyet.com.tr/
 ## Articles
 
 ### Get all articles
-`client.articles.all`
+```ruby
+client.articles.all
+```
 
 ### Get a single article
-`client.articles.single id: 40220736`
+```ruby
+client.articles.single id: 40220736
+```
+
+# Parameters
+Hurriyet API allows you to filter, select and limit the resources you fetch. Here is how:
+
+- **$select**: Select only 1 column from incoming resources.
+- **$top**: Limit response resources.
+- **$filter**: Filter incoming resources. See [here](http://www.odata.org/getting-started/basic-tutorial/#queryData) for more info.
+
+```ruby
+# Takes 3 articles.
+client.articles.all top: 3
+
+# Takes 3 articles of which title equals to 'Ankara'
+client.articles.all top: 4, filter: 'Title eq \'Ankara\''
+
+# Selects title of articles of which title contains word 'Istanbul'
+client.articles.all filter: 'contains(Title, \'Istanbul\')', select: 'Title'
+```
