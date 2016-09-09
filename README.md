@@ -66,6 +66,18 @@ client.pages.all
 client.pages.single('55e861bc6534652c108afa2f')
 ```
 
+## Paths
+
+### Get all paths
+```ruby
+client.paths.all
+```
+
+### Get a single path
+```ruby
+client.paths.single('563cddcc67b0a934e44ee2d7')
+```
+
 # Parameters
 Hurriyet API allows you to filter, select and limit the resources you fetch. Here is how:
 
