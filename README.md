@@ -1,13 +1,13 @@
 # hurriyet-ruby
 Unofficial Ruby Wrapper for Hurriyet API - http://developers.hurriyet.com.tr/
 
-# Getting Started
+## Getting Started
 
-## Installation
+### Installation
 
 `$ gem install hurriyet`
 
-## Usage
+### Usage
 ```ruby
 require 'hurriyet'
 
@@ -15,78 +15,90 @@ client = Hurriyet::Client.new(<YOUR_API_KEY>)
 client.articles.all
 ```
 
-# Resources
+## Table of Contents
+### Resources
+
 - [Articles](#articles)
+- [Columns](#columns)
+- [News Photo Galleries](#news-photo-galleries)
+- [Pages](#pages)
+- [Paths](#paths)
+- [Writers](#writers)
 
-## Articles
+### Other
 
-### Get all articles
+- [Parameters](#parameters)
+
+## Resources
+### Articles
+
 ```ruby
+# Get all articles
 client.articles.all
 ```
 
-### Get a single article
 ```ruby
+# Get a single article
 client.articles.single(40220736)
 ```
 
-## Columns
+### Columns
 
-### Get all columns
 ```ruby
+# Get all columns
 client.columns.all
 ```
 
-### Get a single column
 ```ruby
+# Get a single column
 client.columns.single(40220397)
 ```
 
 ## News Photo Galleries
 
-### Get all galleries
 ```ruby
+# Get all galleries
 client.news_photo_galleries.all
 ```
 
-### Get a single gallery
 ```ruby
+# Get a single gallery
 client.news_photo_galleries.single(40220735)
 ```
 
 ## Pages
 
-### Get all pages
 ```ruby
+# Get all pages
 client.pages.all
 ```
 
-### Get a single page
 ```ruby
+# Get a single page
 client.pages.single('55e861bc6534652c108afa2f')
 ```
 
 ## Paths
 
-### Get all paths
 ```ruby
+# Get all paths
 client.paths.all
 ```
 
-### Get a single path
 ```ruby
+# Get a single path
 client.paths.single('563cddcc67b0a934e44ee2d7')
 ```
 
 ## Writers
 
-### Get all writers
 ```ruby
+# Get all writers
 client.writers.all
 ```
 
-### Get a single writer
 ```ruby
+# Get a single writer
 client.writers.single('570167e867b0a90bdc503452')
 ```
 
