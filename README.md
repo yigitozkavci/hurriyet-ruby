@@ -46,12 +46,12 @@ client.columns.single id: 40220397
 
 ### Get all galleries
 ```ruby
-client.columns.all
+client.news_photo_galleries.all
 ```
 
 ### Get a single gallery
 ```ruby
-client.columns.single id: 40220735
+client.news_photo_galleries.single id: 40220735
 ```
 
 # Parameters
