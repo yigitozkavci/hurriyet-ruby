@@ -27,7 +27,7 @@ client.articles.all
 
 ### Get a single article
 ```ruby
-client.articles.single id: 40220736
+client.articles.single(40220736)
 ```
 
 ## Columns
@@ -39,7 +39,7 @@ client.columns.all
 
 ### Get a single column
 ```ruby
-client.columns.single id: 40220397
+client.columns.single(40220397)
 ```
 
 ## News Photo Galleries
@@ -51,7 +51,19 @@ client.news_photo_galleries.all
 
 ### Get a single gallery
 ```ruby
-client.news_photo_galleries.single id: 40220735
+client.news_photo_galleries.single(40220735)
+```
+
+## Pages
+
+### Get all pages
+```ruby
+client.pages.all
+```
+
+### Get a single page
+```ruby
+client.pages.single('55e861bc6534652c108afa2f')
 ```
 
 # Parameters

@@ -1,12 +1,12 @@
 require 'hurriyet/service/base'
 module Hurriyet
   module Service
-    class Column < Base
+    class Page < Base
       include ApiOperation::List
       include ApiOperation::Show
 
       def endpoint
-        'columns'
+        'pages'
       end
     end
   end
