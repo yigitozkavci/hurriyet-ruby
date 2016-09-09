@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'hurriyet'
-  s.version     = '0.0.0'
+  s.version     = '0.1.0'
   s.date        = '2016-09-09'
   s.summary     = 'Hurriyet API Wrapper'
   s.description = 'Ruby wrapper for developers.hurriyet.com API.'
