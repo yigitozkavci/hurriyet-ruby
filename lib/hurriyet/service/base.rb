@@ -1,5 +1,7 @@
 require 'faraday'
 require 'json'
+require 'hurriyet/service/api_operation/list'
+require 'hurriyet/service/api_operation/show'
 module Hurriyet
   module Service
     class Base

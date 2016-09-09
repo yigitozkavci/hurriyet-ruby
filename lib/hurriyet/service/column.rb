@@ -1,6 +1,4 @@
 require 'hurriyet/service/base'
-require 'hurriyet/service/api_operation/list'
-require 'hurriyet/service/api_operation/show'
 module Hurriyet
   module Service
     class Column < Base
