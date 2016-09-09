@@ -1,5 +1,6 @@
 require 'hurriyet/service/article'
 require 'hurriyet/service/column'
+require 'hurriyet/service/news_photo_gallery'
 module Hurriyet
   class Client
     attr_accessor :apikey
@@ -13,6 +14,10 @@ module Hurriyet
 
     def columns
       Service::Column.new self
+    end
+
+    def news_photo_galleries
+      Service::NewsPhotoGallery.new self
     end
   end
 end

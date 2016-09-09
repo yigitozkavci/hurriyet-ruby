@@ -42,6 +42,18 @@ client.columns.all
 client.columns.single id: 40220397
 ```
 
+## News Photo Galleries
+
+### Get all galleries
+```ruby
+client.columns.all
+```
+
+### Get a single gallery
+```ruby
+client.columns.single id: 40220735
+```
+
 # Parameters
 Hurriyet API allows you to filter, select and limit the resources you fetch. Here is how:
 
