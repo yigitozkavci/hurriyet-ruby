@@ -78,6 +78,18 @@ client.paths.all
 client.paths.single('563cddcc67b0a934e44ee2d7')
 ```
 
+## Writers
+
+### Get all writers
+```ruby
+client.writers.all
+```
+
+### Get a single writer
+```ruby
+client.writers.single('570167e867b0a90bdc503452')
+```
+
 # Parameters
 Hurriyet API allows you to filter, select and limit the resources you fetch. Here is how:
 

@@ -3,6 +3,7 @@ require 'hurriyet/service/column'
 require 'hurriyet/service/news_photo_gallery'
 require 'hurriyet/service/page'
 require 'hurriyet/service/path'
+require 'hurriyet/service/writer'
 
 module Hurriyet
   class Client
@@ -29,6 +30,10 @@ module Hurriyet
 
     def paths
       Service::Path.new self
+    end
+
+    def writers
+      Service::Writer.new self
     end
   end
 end
