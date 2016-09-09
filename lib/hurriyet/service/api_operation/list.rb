@@ -1,8 +1,8 @@
 module Hurriyet
   module ApiOperation
     module List
-      def all
-        execute endpoint
+      def all(options = {})
+        execute endpoint, options
       end 
     end
   end
