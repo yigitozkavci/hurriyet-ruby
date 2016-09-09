@@ -30,6 +30,18 @@ client.articles.all
 client.articles.single id: 40220736
 ```
 
+## Columns
+
+### Get all columns
+```ruby
+client.columns.all
+```
+
+### Get a single column
+```ruby
+client.columns.single id: 40220397
+```
+
 # Parameters
 Hurriyet API allows you to filter, select and limit the resources you fetch. Here is how:
 
