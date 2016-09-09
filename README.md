@@ -9,5 +9,8 @@ Unofficial Ruby Wrapper for Hurriyet API - http://developers.hurriyet.com.tr/
 
 ## Articles
 
-### Find All Articles
+### Get all articles
 `client.articles.all`
+
+### Get a single article
+`client.articles.single id: 40220736`
