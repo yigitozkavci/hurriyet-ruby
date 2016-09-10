@@ -11,5 +11,10 @@ Gem::Specification.new do |s|
   s.homepage    =
     'http://rubygems.org/gems/hurriyet'
   s.license       = 'MIT'
+  s.required_ruby_version = '>= 2.2.0'
+
   s.add_dependency 'faraday', '0.9.2'
+
+  s.add_development_dependency 'rspec',   '~> 3.3'
+  s.add_development_dependency 'rubocop', '~> 0.42'
 end
