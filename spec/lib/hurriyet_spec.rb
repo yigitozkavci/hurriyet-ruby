@@ -2,5 +2,5 @@ require 'spec_helper'
 require 'hurriyet/version'
 
 describe Hurriyet::VERSION do
-  it { should match(/\d+\.\d+\.\d+/) }
+  it { is_expected.to match(/\d+\.\d+\.\d+/) }
 end

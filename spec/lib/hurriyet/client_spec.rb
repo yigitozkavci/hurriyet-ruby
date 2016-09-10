@@ -8,7 +8,11 @@ module Hurriyet
       %w(articles columns news_photo_galleries pages paths writers)
     end
 
-    it 'returns services correctly' do
+    it 'has api key' do
+      expect(client).to respond_to(:apikey)
+    end
+
+    it 'returns services' do
       services.each do |r|
         expect(client).to respond_to(r)
         service = client.send(r)
