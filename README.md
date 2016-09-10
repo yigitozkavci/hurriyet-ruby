@@ -1,6 +1,7 @@
 # hurriyet-ruby
 ![Gem Version](https://img.shields.io/gem/v/hurriyet.svg)
 ![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+![Travis CI](https://img.shields.io/travis/yigitozkavci/hurriyet-ruby.svg)
 
 Unofficial Ruby Wrapper for Hurriyet API - http://developers.hurriyet.com.tr/
 
