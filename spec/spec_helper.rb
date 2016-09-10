@@ -9,4 +9,4 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
-Dir["./spec/support/**/*.rb"].sort.each { |f| require f}
+Dir['./spec/support/**/*.rb'].sort.each { |f| require f }

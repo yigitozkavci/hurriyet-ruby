@@ -9,8 +9,9 @@ module Hurriyet
       ALLOWED_PARAMETERS = %w(filter select top).map!(&:to_sym).freeze
       def initialize(client)
         @client = client
-        @conn = Faraday.new(url: 'https://api.hurriyet.com.tr', headers: { apikey: @client.apikey })
-      end      
+        @conn = Faraday.new url: 'https://api.hurriyet.com.tr',
+                            headers: { apikey: @client.apikey }
+      end
 
       def execute(endpoint, options = {})
         @options  = options
@@ -30,7 +31,7 @@ module Hurriyet
       def param_string
         string = ''
         @options.each_with_index do |(key, value), index|
-          raise unless allowed?(key)
+          fail unless allowed?(key)
           prefix = index == 0 ? '?' : '&'
           string << "#{prefix}$#{key}=#{value}"
         end

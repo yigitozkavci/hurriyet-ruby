@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.authors     = ['Yigit Ozkavci']
   s.email       = 'yigitozkavci8@gmail.com'
   s.files       = Dir['lib/**/*.rb']
-  s.homepage    =
-    'http://rubygems.org/gems/hurriyet'
-  s.license       = 'MIT'
+  s.homepage    = 'http://rubygems.org/gems/hurriyet'
+  s.license     = 'MIT'
+
   s.required_ruby_version = '>= 2.2.0'
 
   s.add_dependency 'faraday', '0.9.2'

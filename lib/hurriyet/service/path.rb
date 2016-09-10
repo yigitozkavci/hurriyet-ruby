@@ -11,4 +11,3 @@ module Hurriyet
     end
   end
 end
-

@@ -3,7 +3,7 @@ module Hurriyet
     module List
       def all(options = {})
         execute endpoint, options
-      end 
+      end
     end
   end
 end
