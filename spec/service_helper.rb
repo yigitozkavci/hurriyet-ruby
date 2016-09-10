@@ -1,7 +1,7 @@
 require 'hurriyet/service/api_operation/list'
 RSpec::Matchers.define :include_operation do |expected|
   match do |actual|
-    actual.included_modules.include?(operation_class expected) 
+    actual.class.included_modules.include?(operation_class expected) 
   end
 end
 
