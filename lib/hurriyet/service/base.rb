@@ -31,8 +31,8 @@ module Hurriyet
       def param_string
         string = ''
         @options.each_with_index do |(key, value), index|
-          fail unless allowed?(key)
-          prefix = index == 0 ? '?' : '&'
+          raise unless allowed?(key)
+          prefix = index.zero? ? '?' : '&'
           string << "#{prefix}$#{key}=#{value}"
         end
         string
