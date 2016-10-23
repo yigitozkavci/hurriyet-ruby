@@ -117,8 +117,8 @@ Hurriyet API allows you to filter, select and limit the resources you fetch. Her
 # Takes 3 articles.
 client.articles.all top: 3
 
-# Takes 3 articles of which title equals to 'Ankara'
-client.articles.all top: 4, filter: 'Title eq \'Ankara\''
+# Takes 3 articles of which path equals to 'gundem'
+client.articles.all top: 4, filter: 'Path eq \'gundem\''
 
 # Selects title of articles of which title contains word 'Istanbul'
 client.articles.all filter: 'contains(Title, \'Istanbul\')', select: 'Title'
