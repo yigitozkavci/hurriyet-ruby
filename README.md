@@ -123,3 +123,6 @@ client.articles.all top: 4, filter: 'Path eq \'gundem\''
 # Selects title of articles of which title contains word 'Istanbul'
 client.articles.all filter: 'contains(Title, \'Istanbul\')', select: 'Title'
 ```
+
+# LICENSE
+This project is licensed under the terms of the [MIT license](https://github.com/yigitozkavci/hurriyet-ruby/blob/master/LICENSE.md).
