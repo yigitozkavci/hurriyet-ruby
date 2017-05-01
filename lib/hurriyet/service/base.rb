@@ -7,6 +7,8 @@ module Hurriyet
     class Base
       attr_accessor :client
       ALLOWED_PARAMETERS = %w(filter select top).map(&:to_sym).freeze
+      VERSION = 'v1'
+      
       def initialize(client)
         @client = client
         @conn = Faraday.new url: 'https://api.hurriyet.com.tr',
@@ -25,25 +27,21 @@ module Hurriyet
       end
 
       def url
-        "/#{version}/#{@endpoint}#{param_string}"
+        "/#{VERSION}/#{@endpoint}#{param_string}"
       end
 
       def param_string
         string = ''
         @options.each_with_index do |(key, value), index|
-          raise unless allowed?(key)
+          raise unless parameter_allowed?(key)
           prefix = index.zero? ? '?' : '&'
           string << "#{prefix}$#{key}=#{value}"
         end
         string
       end
 
-      def allowed?(key)
+      def parameter_allowed?(key)
         ALLOWED_PARAMETERS.include? key
-      end
-
-      def version
-        'v1'
       end
     end
   end
