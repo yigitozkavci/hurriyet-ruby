@@ -7,8 +7,8 @@ module Hurriyet
     class Base
       attr_accessor :client
       ALLOWED_PARAMETERS = %w(filter select top).map(&:to_sym).freeze
-      VERSION = 'v1'
-      
+      VERSION = 'v1'.freeze
+
       def initialize(client)
         @client = client
         @conn = Faraday.new url: 'https://api.hurriyet.com.tr',
